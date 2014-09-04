@@ -1,7 +1,12 @@
 #!/bin/bash
 
+echo "Please specify a remote Git repository:"
+read repo
+
 # initialise a new git repo
 git init;
+
+git remote add origin $repo
 
 # add this bin folder to the .gitignore
 echo bin >> .gitignore;
