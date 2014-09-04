@@ -1,5 +1,18 @@
 #!/bin/bash
 
+# initialise a new git repo
+git init;
+
+# add this bin folder to the .gitignore
+echo bin >> .gitignore;
+
+# add everything to git
+git add .;
+
+# commit everything
+git commit -m "Initial commit";
+
+# setup scripts
 bower init;
 mkdir bower_components;
 
